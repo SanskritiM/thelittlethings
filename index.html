@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>the little things - Start Bootstrap Template</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+    rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.css" rel="stylesheet">
+  <style>
+    .emotionsbackround {
+      background: #f2f3f4;
+    }
+
+    .acolor1 {
+      background: #094c59;
+    }
+
+    .acolor2 {
+      background: #3d998a;
+    }
+
+    .acolor3 {
+      background: #69bf8d;
+    }
+
+    .acolor4 {
+      background: #ace6a1;
+    }
+
+    .acolor5 {
+      background: #b8e68a;
+    }
+
+    .bcolor1 {
+      background: #ffcdb2;
+    }
+
+    .bcolor2 {
+      background: #ffb482;
+    }
+
+    .bcolor3 {
+      background: #e5989b;
+    }
+
+    .bcolor4 {
+      background: #b583ad;
+    }
+
+    .bcolor5 {
+      background: #6d6875;
+    }
+
+
+    .ccolor1 {
+      background: #d8dbe2;
+    }
+
+    .ccolor2 {
+      background: #a9bcd0;
+    }
+
+    .ccolor3 {
+      background: #58a4b0;
+    }
+
+    .ccolor4 {
+      background: #373f51;
+    }
+
+    .ccolor5 {
+      background: #1b1b1e;
+    }
+
+
+    .dcolor1 {
+      background: #ff9b54;
+    }
+
+    .dcolor2 {
+      background: #ff7f51;
+    }
+
+    .dcolor3 {
+      background: #ce4257;
+    }
+
+    .dcolor4 {
+      background: #720026;
+    }
+
+    .dcolor5 {
+      background: #4f000b;
+    }
+
+
+    .ecolor1 {
+      background: #2a9d8f;
+    }
+
+    .ecolor2 {
+      background: #e9c46a;
+    }
+
+    .ecolor3 {
+      background: #f4a261;
+    }
+
+    .ecolor4 {
+      background: #ff9b54;
+    }
+
+    .ecolor5 {
+      background: #e76f51;
+    }
+
+
+
+    .afgcolor1 {
+      color: #094c59;
+    }
+
+    .afgcolor2 {
+      color: #3d998a;
+    }
+
+    .afgcolor3 {
+      color: #69bf8d;
+    }
+
+    .afgcolor4 {
+      color: #85af7c;
+    }
+
+    .afgcolor5 {
+      color: #84a762;
+    }
+
+    .bfgcolor1 {
+      color: #ffcdb2;
+    }
+
+    .bfgcolor2 {
+      color: #ffb482;
+    }
+
+    .bfgcolor3 {
+      color: #e5989b;
+    }
+
+    .bfgcolor4 {
+      color: #b583ad;
+    }
+
+    .bfgcolor5 {
+      color: #6d6875;
+    }
+
+
+    .cfgcolor1 {
+      color: #b0b2b8;
+    }
+
+    .cfgcolor2 {
+      color: #a9bcd0;
+    }
+
+    .cfgcolor3 {
+      color: #58a4b0;
+    }
+
+    .cfgcolor4 {
+      color: #373f51;
+    }
+
+    .cfgcolor5 {
+      color: #1b1b1e;
+    }
+
+
+    .dfgcolor1 {
+      color: #ff9b54;
+    }
+
+    .dfgcolor2 {
+      color: #ff7f51;
+    }
+
+    .dfgcolor3 {
+      color: #ce4257;
+    }
+
+    .dfgcolor4 {
+      color: #720026;
+    }
+
+    .dfgcolor5 {
+      color: #4f000b;
+    }
+
+
+    .efgcolor1 {
+      color: #2a9d8f;
+    }
+
+    .efgcolor2 {
+      color: #e9c46a;
+    }
+
+    .efgcolor3 {
+      color: #f4a261;
+    }
+
+    .efgcolor4 {
+      color: #ff9b54;
+    }
+
+    .efgcolor5 {
+      color: #e76f51;
+    }
+
+    .emotioncolor {
+      color: #424242;
+    }
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    function removeAllColors(e, prefix) {
+      e.removeClass(prefix + "color1");
+      e.removeClass(prefix + "color2");
+      e.removeClass(prefix + "color3");
+      e.removeClass(prefix + "color4");
+      e.removeClass(prefix + "color5");
+    }
+    function addColor(e, count, prefix) {
+      e.removeClass("text-primary");
+      if (count == 1) {
+        e.addClass(prefix + "color1")
+      } else if (count == 2) {
+        e.addClass(prefix + "color2")
+      } else if (count == 3) {
+        e.addClass(prefix + "color3")
+      } else if (count == 4) {
+        e.addClass(prefix + "color4")
+      } else if (count == 5) {
+        e.addClass(prefix + "color5")
+      } else {
+        removeAllColors(e, prefix)
+        e.addClass("text-primary")
+      }
+    }
+
+    function increment(value) {
+      if (value < 5) {
+        value++;
+      } else {
+        value = 0;
+      }
+      return value;
+    }
+    var haClickCount = 0
+    var ctClickCount = 0
+    var exClickCount = 0
+    var neClickCount = 0
+    var tiClickCount = 0
+    var stClickCount = 0
+    var anClickCount = 0
+    var scClickCount = 0
+    var saClickCount = 0
+    var plClickCount = 0
+    var coClickCount = 0
+    var meClickCount = 0
+
+    var haPhrases = ['An Overall Good Feeling', 'Light-hearted', 'Sunny', 'Cheerful', 'Beaming', 'Yaaaaay!!']
+    var ctPhrases = ['Satisfaction, Peace', 'Comfortable', 'Relaxed', 'Cool Beans', 'Peaceful', 'Blissful']
+    var exPhrases = ['Enthusiastic, Eager', 'Jumpy', 'Upbeat', 'Estatic', 'Thrilled', 'Yippieee!!']
+    var nePhrases = ['Anxious, Apprehensive', 'Just a bit jittery', 'Pacing across the room', 'Biting my finger nails', 'OhNoOhNoOhNoOhNo', 'Im gonna pee my pants!']
+    var tiPhrases = ['In need of sleep or rest,', 'Just a bit drowsy', 'Need....Coffee....', 'Im 90% asleep and 10% awake', 'Im practially sleep walking at this point', 'Dead on the inside']
+    var stPhrases = ['Mental/emotional strain', 'UUuUG', 'My workload is heavier than 7 full grown hippopotamuses', 'AAh! I cant breathe!', 'My brain will explode any minute now', 'AaAaaAaAAaAaAaHHHH!!']
+    var anPhrases = ['Annoyance, Displeasure, Hostility', 'Just a bit ticked off', 'ClEnChINg My fIsTs', 'Do not come near me now, I am very, very, dangerous.', 'I. Want. To. Break. Something. Now. ', 'AAAAAH! @%$#&*#@#!!!!']
+    var scPhrases = ['Frightened, Fearful', 'Please let this be over soon', 'My heart is beating 10x faster than normal', 'I want to hide', 'PleaseBeADreamPleaseBeADreamPleaseBeADream', 'AhAhhAAhAAaHH!!!!']
+    var saPhrases = ['Sorrowful, Unhappy', 'Feeling a bit down', 'Need a hug', 'Got a raincloud over my head', 'Drowning in tears :(', 'Im Dead. Shattered. I cant stand this.']
+    var plPhrases = ['Lighthearted, Amused, Silly', 'Just feeling a bit silly :)', 'Super Goofy', 'I feel like Im 5 years old!', 'Hakuna Matata!', 'WoooHooooooooooo! :)']
+    var coPhrases = ['Assured, Optimistic', 'Im feeling pretty good about this', 'Pumped', 'Feeling Strong', 'Wooooh!!', 'Lets Do This!!!!!!']
+    var mePhrases = ['Just Meh', 'meh', 'still meh', 'Meeeeeeeeeh', 'MehMehMehMehMeh (Meh is not a very dynamic expression)', 'Meh. Period.']
+    $(document).ready(function () {
+      $("#hapage").hide();
+      $("#contpage").hide();
+      $("#expage").hide();
+      $("#nepage").hide();
+      $("#tipage").hide();
+      $("#stpage").hide();
+      $("#anpage").hide();
+      $("#scpage").hide();
+      $("#sapage").hide();
+      $("#plpage").hide();
+      $("#confpage").hide();
+      $("#mepage").hide();
+      $("#haptext").hide();
+      $("#extext").hide();
+      $("#netext1").hide();
+      $("#netext2").hide();
+      $("#titext1").hide();
+      $("#titext2").hide();
+      $("#titext3").hide();
+      $("#stext1").hide();
+      $("#stext2").hide();
+      $("#stext3").hide();
+
+      $("#hash").click(function () {
+        $("#haptext").show();
+      });
+
+      $("#exsh").click(function () {
+        $("#extext").show();
+      });
+
+      $("#neyes").click(function () {
+        $("#netext1").show();
+      });
+
+      $("#neno").click(function () {
+        $("#netext1").show();
+      });
+
+      $("#nesh").click(function () {
+        $("#netext2").show();
+      });
+
+      $("#ti1").click(function () {
+        $("#titext1").show();
+      });
+
+      $("#ti2").click(function () {
+        $("#titext2").show();
+      });
+
+      $("#ti3").click(function () {
+        $("#titext3").show();
+      });
+
+      $("#st1").click(function () {
+        $("#stext1").show();
+      });
+
+      $("#st2").click(function () {
+        $("#stext2").show();
+      });
+
+      $("#stsh").click(function () {
+        $("#stext3").show();
+      });
+
+
+      $("#happy").click(function () {
+        haClickCount = increment(haClickCount)
+        removeAllColors($("#happy"), "a")
+        addColor($("#happy"), haClickCount, "a");
+        addColor($(".happy"), haClickCount, "afg");
+        $("#happytext").text(haPhrases[haClickCount])
+        //$("#hapage").show();
+      });
+
+      $("#content").click(function () {
+        ctClickCount = increment(ctClickCount)
+        removeAllColors($("#content"), "b")
+        addColor($("#content"), ctClickCount, "b");
+        addColor($(".content"), ctClickCount, "bfg");
+        $("#contenttext").text(ctPhrases[ctClickCount])
+      });
+
+      $("#excited").click(function () {
+        exClickCount = increment(exClickCount)
+        removeAllColors($("#excited"), "e")
+        addColor($("#excited"), exClickCount, "e");
+        addColor($(".excited"), exClickCount, "efg");
+        $("#excitedtext").text(exPhrases[exClickCount])
+      });
+
+      $("#nervous").click(function () {
+        neClickCount = increment(neClickCount)
+        removeAllColors($("#nervous"), "d")
+        addColor($("#nervous"), neClickCount, "d");
+        addColor($(".nervous"), neClickCount, "dfg");
+        $("#nervoustext").text(nePhrases[neClickCount])
+      });
+
+      $("#tired").click(function () {
+        tiClickCount = increment(tiClickCount)
+        removeAllColors($("#tired"), "c")
+        addColor($("#tired"), tiClickCount, "c");
+        addColor($(".tired"), tiClickCount, "cfg");
+        $("#tiredtext").text(tiPhrases[tiClickCount])
+      });
+
+      $("#stressed").click(function () {
+        stClickCount = increment(stClickCount)
+        removeAllColors($("#stressed"), "d")
+        addColor($("#stressed"), stClickCount, "d");
+        addColor($(".stressed"), stClickCount, "dfg");
+        $("#stressedtext").text(stPhrases[stClickCount])
+      });
+
+      $("#angry").click(function () {
+        anClickCount = increment(anClickCount)
+        removeAllColors($("#angry"), "d")
+        addColor($("#angry"), anClickCount, "d");
+        addColor($(".angry"), anClickCount, "dfg");
+        $("#angrytext").text(anPhrases[anClickCount])
+      });
+
+      $("#scared").click(function () {
+        scClickCount = increment(scClickCount)
+        removeAllColors($("#scared"), "c")
+        addColor($("#scared"), scClickCount, "c");
+        addColor($(".scared"), scClickCount, "cfg");
+        $("#scaredtext").text(scPhrases[scClickCount])
+      });
+
+      $("#sad").click(function () {
+        saClickCount = increment(saClickCount)
+        removeAllColors($("#sad"), "c")
+        addColor($("#sad"), saClickCount, "c");
+        addColor($(".sad"), saClickCount, "cfg");
+        $("#sadtext").text(saPhrases[saClickCount])
+      });
+
+      $("#playful").click(function () {
+        plClickCount = increment(plClickCount)
+        removeAllColors($("#playful"), "e")
+        addColor($("#playful"), plClickCount, "e");
+        addColor($(".playful"), plClickCount, "efg");
+        $("#playfultext").text(plPhrases[plClickCount])
+      });
+
+      $("#confident").click(function () {
+        coClickCount = increment(coClickCount)
+        removeAllColors($("#confident"), "a")
+        addColor($("#confident"), coClickCount, "a");
+        addColor($(".confident"), coClickCount, "afg");
+        $("#confidenttext").text(coPhrases[coClickCount])
+      });
+
+      $("#meh").click(function () {
+        meClickCount = increment(meClickCount)
+        removeAllColors($("#meh"), "b")
+        addColor($("#meh"), meClickCount, "b");
+        addColor($(".meh"), meClickCount, "bfg");
+        $("#mehtext").text(mePhrases[meClickCount])
+      });
+
+      $("#emotionsButton").click(function () {
+        if (haClickCount > 0)
+          $("#hapage").show();
+        if (ctClickCount > 0)
+          $("#contpage").show();
+        if (exClickCount > 0)
+          $("#expage").show();
+        if (neClickCount > 0)
+          $("#nepage").show();
+        if (tiClickCount > 0)
+          $("#tipage").show();
+        if (stClickCount > 0)
+          $("#stpage").show();
+        if (anClickCount > 0)
+          $("#anpage").show();
+        if (scClickCount > 0)
+          $("#scpage").show();
+        if (saClickCount > 0)
+          $("#sapage").show();
+        if (plClickCount > 0)
+          $("#plpage").show();
+        if (coClickCount > 0)
+          $("#confpage").show();
+        if (meClickCount > 0)
+          $("#mepage").show();
+
+        if (haClickCount > 0)
+          document.getElementById("hapage").scrollIntoView({ behavior: "smooth" })
+        else if (ctClickCount > 0)
+          document.getElementById("contpage").scrollIntoView({ behavior: "smooth" })
+        else if (exClickCount > 0)
+          document.getElementById("expage").scrollIntoView({ behavior: "smooth" })
+        else if (neClickCount > 0)
+          document.getElementById("nepage").scrollIntoView({ behavior: "smooth" })
+        else if (tiClickCount > 0)
+          document.getElementById("tipage").scrollIntoView({ behavior: "smooth" })
+        else if (stClickCount > 0)
+          document.getElementById("stpage").scrollIntoView({ behavior: "smooth" })
+        else if (anClickCount > 0)
+          document.getElementById("anpage").scrollIntoView({ behavior: "smooth" })
+        else if (scClickCount > 0)
+          document.getElementById("scpage").scrollIntoView({ behavior: "smooth" })
+        else if (saClickCount > 0)
+          document.getElementById("sapage").scrollIntoView({ behavior: "smooth" })
+        else if (plClickCount > 0)
+          document.getElementById("plpage").scrollIntoView({ behavior: "smooth" })
+        else if (coClickCount > 0)
+          document.getElementById("confpage").scrollIntoView({ behavior: "smooth" })
+        else if (meClickCount > 0)
+          document.getElementById("mepage").scrollIntoView({ behavior: "smooth" })
+      });
+
+    });
+
+  </script>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1">
+        <em>the little things</em>
+      </h1>
+      <h3 class="mb-5">
+        <em>the ones that count</em>
+      </h3>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#services">Let's Talk</a>
+    </div>
+    <div class="overlay"></div>
+  </header>
+
+  <!-- Services -->
+  <section class="content-section emotionsbackround text-white text-center" id="services">
+    <div class="container">
+      <div class="content-section-heading">
+        <h3 class="text-secondary mb-0"> </h3>
+        <h2 class="text-primary mb-5">How do you feel today?</h2>
+      </div>
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 ">
+          <span class="service-icon rounded-circle mx-auto mb-3 color1" id="happy">
+            <i class="far fa-laugh fa-lg "></i>
+
+          </span>
+          <h4>
+            <strong class="happy text-primary ">Happy</strong>
+          </h4>
+          <p class="text-primary  mb-0 happy" id="happytext">An overall good feeling</p>
+
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3" id="content">
+            <i class="far fa-smile-beam fa-lg fa-lg"></i>
+          </span>
+          <h4>
+            <strong class="content text-primary ">Content</strong>
+          </h4>
+          <p class="text-primary  mb-0 content" id="contenttext">Satisfaction, Peace</p>
+
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3" id="excited">
+            <i class="far fa-laugh-squint fa-lg"></i>
+          </span>
+          <h4>
+            <strong class="excited text-primary ">Excited</strong>
+          </h4>
+          <p class="text-primary  mb-0 excited" id="excitedtext">Enthusiastic, Eager</p>
+          <br>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3" id="nervous">
+            <i class="far fa-grimace fa-lg"></i>
+          </span>
+          <h4>
+            <strong class="nervous text-primary ">Nervous</strong>
+          </h4>
+          <p class="text-primary  mb-0 nervous" id="nervoustext">Anxious, Apprehensive</p>
+
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3" id="tired">
+            <i class="far fa-meh-blank fa-lg"></i>
+          </span>
+          <h4>
+            <strong class="text-primary tired">Tired</strong>
+          </h4>
+          <p class="text-primary mb-0 tired" id="tiredtext">In need of sleep or rest</p>
+
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3" id="stressed">
+            <i class="far fa-tired fa-lg"></i>
+          </span>
+          <h4>
+            <strong class="stressed text-primary ">Stressed</strong>
+          </h4>
+          <p class="text-primary  mb-0 stressed" id="stressedtext">Mental/emotional strain</p>
+
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3" id="angry">
+            <i class="far fa-angry fa-lg"></i>
+          </span>
+          <h4>
+            <strong class="angry text-primary ">Angry</strong>
+          </h4>
+          <p class="text-primary  mb-0 angry" id="angrytext">Annoyance, Displeasure, Hostility</p>
+
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3" id="scared">
+            <i class="far fa-dizzy fa-lg fa-lg"></i>
+          </span>
+          <h4>
+            <strong class="scared text-primary ">Scared</strong>
+          </h4>
+          <p class="text-primary  mb-0 scared" id="scaredtext">Frightened, Fearful</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3" id="sad">
+            <i class="far fa-sad-cry fa-lg"></i>
+          </span>
+          <h4>
+            <strong class="sad text-primary ">Sad</strong>
+          </h4>
+          <p class="text-primary  mb-0 sad" id="sadtext">Sorrowful, Unhappy</p>
+
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3" id="playful">
+            <i class="far fa-grin-tongue-squint fa-lg"></i>
+          </span>
+          <h4>
+            <strong class="playful text-primary ">Playful</strong>
+          </h4>
+          <p class="text-primary  mb-0 playful" id="playfultext">Lighthearted, Amused, Silly</p>
+
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3" id="confident">
+            <i class="far fa-grin-stars fa-lg"></i>
+          </span>
+          <h4>
+            <strong class="confident text-primary ">Confident</strong>
+          </h4>
+          <p class="text-primary  mb-0 confident" id="confidenttext">Assured, Optimistic</p>
+
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3" id="meh">
+            <i class="far fa-meh fa-lg"></i>
+          </span>
+          <h4>
+            <strong class="meh text-primary ">Meh</strong>
+          </h4>
+          <p class="text-primary  mb-0 meh" id="mehtext">Just meh</p>
+
+        </div>
+        <div class="col-lg-12 text-center">
+          <br>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" id="emotionsButton">Let's Talk</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Callout -->
+  <section class="callout afgcolor1" id="hapage">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5 afgcolor3">Awesome! <small class="emotioncolor"> I love that you're Happy. Keep it that
+          way!</small></h2>
+      <form>
+        <div class="form-group">
+          <label for="happyText" class="advise">Anything good happen recently? Care to share? </label>
+          <input type="text" class="form-control" id="happyText" placeholder="What makes you happy today?">
+        </div>
+        <button type="button" class="btn acolor3" id="hash">Share</button>
+        <br>
+        <div class="container text-center" id="haptext">
+          <br>
+          <label for="happyText" class="advise2 font-weight-bold">Thats great! Congratulations.</label>
+          <div class="well">
+            <blockquote class="blockquote well">
+              <p class="mb-0 quote2 font-bold afgcolor3">
+                "Happiness is a direction, not a place."
+              </p>
+              <footer class="blockquote-footer quote"><cite title="Source Title">Sydney J. Harris</cite></footer>
+            </blockquote>
+          </div>
+          <label for="happyText" class="advise2">You're on the right path, so dont let anything bring you down! We
+            believe in you!</label>
+        </div>
+      </form>
+      <br><br><br><br>
+      <hr>
+    </div>
+  </section>
+
+  <section class="callout bfgcolor2" id="contpage">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5 bfgcolor2">Cool beans! <small class="emotioncolor"> Content is not amazing, but not bad
+          either. A pretty nice place to be. </small></h2>
+      <form>
+        <label for="contentText" class="advise">I’m glad you're feeling well! May the odds be in your favor. </label>
+        <blockquote class="blockquote well">
+          <p class="mb-0 quote2 font-bold bfgcolor2">
+            "Be content with what you have; rejoice in the way things are. When you realize there is nothing lacking,
+            the whole world belongs to you."
+          </p>
+          <footer class="blockquote-footer quote"><cite title="Source Title"> Lao Tzu</cite></footer>
+        </blockquote>
+
+      </form>
+      <br><br><br><br>
+      <hr>
+    </div>
+  </section>
+
+  <section class="callout efgcolor5" id="expage">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5 efgcolor5">Whoo!<small class="emotioncolor"> You're Excited! How Fun!</small>
+      </h2>
+      <form>
+        <div class="form-group">
+          <label for="excitedText" class="advise">Woo!! You're excited? As am I! Want to share why? Im all ears.</label>
+          <input type="text" class="form-control" id="excitedText" placeholder="What makes you excited today?">
+        </div>
+        <button type="button" class="btn ecolor5" id="exsh">Share</button>
+        <div class="container text-center" id="extext">
+          <label for="excitedText" class="advise">Cool! Sounds interesting.</label>
+          <label for="excitedText" class="advise">Here's a Quotes to boost your mood!</label>
+          <blockquote class="blockquote well">
+            <p class="mb-0 quote2 efgcolor5">
+              "Without leaps of imagination or dreaming, we lose the excitement of possibilities.
+              Dreaming, after all is a form of planning."
+            </p>
+            <footer class="blockquote-footer quote"><cite title="Source Title"> Gloria Steinem</cite></footer>
+          </blockquote>
+          <label for="excitedText" class="advise font-weight-bold">Keep finding things to look forward to! Dream big,
+            and dont be afraid to take a change and try something new!</label>
+        </div>
+      </form>
+      <br><br><br><br>
+      <hr>
+    </div>
+  </section>
+
+  <section class="callout dfgcolor4" id="nepage">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5 efgcolor5">Oh no! <small class="emotioncolor"> You seem nervous. Lets talk about
+          it.</small>
+      </h2>
+      <form>
+        <div class="form-group">
+          <label for="nervousText" class="advise">Are you nervous about something you have to do? </label>
+          <div class="form-check" id="neyes">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+              checked>
+            <label class="form-check-label advise2" for="exampleRadios1">
+              Yes
+            </label>
+          </div>
+          <div class="form-check advise" id="neno">
+            <input class="form-check-input advise" type="radio" name="exampleRadios" id="exampleRadios2"
+              value="option2">
+            <label class="form-check-label advise2" for="exampleRadios2">
+              No
+            </label>
+          </div>
+          <div class="container text-center advise" id="netext1">
+            <div class="form-group advise">
+              <label for="nervousText advise">What is it? </label>
+              <input type="text" class="form-control" id="nervousText" placeholder="What are you nervous about?">
+              <br><button type="button" class="btn ecolor5" id="nesh">Share</button><br>
+            </div>
+          </div>
+      </form>
+    </div>
+    <div class="container text-center advise " id="netext2">
+      <label for="nervousText advise2 font-weight-bold">It's okay. You got this. Everyone feels nervous at some point,
+        even if it may look like they aren't. Just take a few deep breaths. </label><br>
+      <blockquote class="blockquote well">
+        <p class="mb-0 quote2 efgcolor5">
+          "When you're betting for tiles in
+          an archery contest, you shoot with skill. When you're betting for fancy belt buckles, you worry about your
+          aim. And when you're betting for real gold, you're a nervous wreck. Your skill is the same in all three cases
+          - but because one prize means more to you than another, you let outside considerations weigh on your mind. He
+          who looks too hard at the outside gets clumsy on the inside."
+        </p>
+        <footer class="blockquote-footer quote"><cite title="Source Title"> Zhuangzi</cite></footer>
+      </blockquote>
+      <label for="nervousText advise2"><label for="nervousText advise ">The only thing you can do is how you approach
+          the sitation. I think the best way
+          to approach the situation is with confidence. Try and stay positive, and it may get better.</label>
+        <label for="nervousText advise2"><label for="nervousText">Optimism is the most important human trait, because it
+            allows us to evolve our ideas, to improve our situation, and to hope for a better tomorrow."</label>
+          <blockquote class="blockquote well">
+            <p class="mb-0 quote2 efgcolor5">
+              "Confidence is what we get when we take fear, face it and replace it."
+            </p>
+            <footer class="blockquote-footer quote"><cite title="Source Title"> Tim Fargo</cite></footer>
+          </blockquote>
+          <br><br><br><br>
+          <hr>
+    </div>
+    </div>
+  </section>
+
+  <section class="callout cfgcolor2" id="tipage">
+    <div class="container text-center">
+       <h2 class="mx-auto mb-5 cfgcolor2">Tired? <small class="emotioncolor"> So am I...*yawn* Why though?</small>
+      </h2>
+      <form>
+        <div class="form-group advise2">
+          <div class="form-check" id="ti1">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+              checked>
+            <label class="form-check-label" for="exampleRadios1">
+              I just felt like staying up late binging a book, watching shows and stuff.
+            </label>
+          </div>
+          <div class="form-check" id="ti2">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              I just couldn’t sleep...
+            </label>
+          </div>
+          <div class="form-check" id="ti3">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+            <label class="form-check-label" for="exampleRadios3">
+              I had a lot of work to do so I had to stay up really late to finish.
+            </label>
+          </div>
+          <div class="container text-center cfgcolor2" id="titext1">
+            <label for="tiredText">Lol!! Taking a break and just relaxing every once and a while is great! Make sure to
+              get enough sleep though, as your brain needs some rest as well!</label>
+              <blockquote class="blockquote well">
+                <p class="mb-0 quote2 cfgcolor2">
+                  "Your future depends on your dreams, so go to
+              sleep." 
+                </p>
+                <footer class="blockquote-footer quote"><cite title="Source Title">Mesut Barazany</cite></footer>
+              </blockquote>
+              <label for="tiredText">Heres a quote to help you rest easy: "Your future depends on your dreams, so go to
+              sleep." – Mesut Barazany. </label>
+            <br><br><br><br>
+          </div>
+          <div class="container text-center" id="titext2">
+            <label for="tiredText">Maybe you could relate to some of these then?
+              https://everydaypower.com/insomnia-quotes/ </label>
+            <br><br><br><br>
+          </div>
+          <div class="container text-center" id="titext3">
+            <label for="tiredText">Oh no! Have you looked at the stressed button? Maybe consider speaking up if you
+              notice
+              a problem in your workplace or school? </label>
+            <label for="tiredText">Make sure to take some breaks along the way. Take a nap, drink some water, get some
+              snacks. "Almost everything will work again if you unplug it for a few minutes, i
+              ncluding you." </label>
+          </div>
+
+        </div>
+      </form>
+      <br><br><br><br>
+      <hr>
+    </div>
+  </section>
+
+
+
+
+
+  <section class="callout afgcolor6" id="stpage">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5">Oh no! Stressed is not good for you. Let's talk about it.</h2>
+      <form>
+        <div class="form-group">
+          <label for="stressedText">Oh no! You're feeling stressed...What wrong? Too much to do, or is something else
+            bothering you? </label>
+          <div class="form-check" id="st1">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+              checked>
+            <label class="form-check-label" for="exampleRadios1">
+              Waaaaay too much to do
+            </label>
+          </div>
+          <div class="form-check" id="st2">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              No, it's something else
+            </label>
+          </div>
+        </div>
+        <div class="container text-center" id=”stext1”>
+          <label for="stressedText">Oh No! Too much to do? Well, I for one have definitely faced that before. Tell me
+            what
+            you have to do. </label>
+          <input type="text" class="form-control" id="stressedText" placeholder="What do you have to do?">
+          <br><button type="button" class="btn btn-primary" id="stsh1">Share</button><br>
+          <label for="stressedText">Oh god, you're right, that does sound pretty stressful... I would suggest just
+            getting organized if you haven't done so already. Time management is key. Time = life; therefore, waste your
+            time and waste of your life, or master your time and master your life.</label>
+        </div>
+        <div class="container text-center" id=”stext2”>
+          <label for="stressedText">Something else. Hmmm... What's That?</label>
+          <input type="text" class="form-control" id="stressedText" placeholder="What's up?">
+          <button type="submit" class="btn btn-primary" id="stsh2">Share</button>
+        </div>
+        <div class="container text-center" id=”stext3”>
+          <label for="stressedText">Oh no..Thats not good. I hope you feel better soon, and i hope things get better!
+            Dont
+            give up though, learn from this and let it make you better.</label>
+        </div>
+
+      </form>
+      <br><br><br><br>
+      <hr>
+    </div>
+  </section>
+
+  <section class="callout afgcolor7" id="anpage">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5">You’re angry. Are you angry at a person? </h2>
+      <form>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+              checked>
+            <label class="form-check-label" for="exampleRadios1">
+              Yes
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              No
+            </label>
+          </div>
+
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+              checked>
+            <label class="form-check-label" for="exampleRadios1">
+              I'm mad at someone I love
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              I'm not mad at someone I love
+            </label>
+          </div>
+          <label for="angryText">"No matter how angry you get you will always end up forgiving those who you love". But
+            it is important not to let that anger ruin your relationship with that person. </label>
+
+          <label for="angryText">"Getting angry is actually punishing yourself for the mistakes of others." Don’t let
+            your anger at someone who doesn’t matter ruin your life. It is best to move on and not hold onto that anger.
+            If you can’t do that, then try to talk about why you are angry. </label>
+          <br><br>
+          <label for="angryText">What are you angry at?</label>
+          <input type="text" class="form-control" id="happyText" placeholder="what made you angry?">
+          <label for="angryText">
+            Agh!! So unfair! Although, some looking at things from a different perspective can be helpful. Only once
+            you’re completely sure the other side is wrong, should you act upon your anger. "Anybody can become angry —
+            that is easy, but to be angry with the right person and to the right degree and at the right time and for
+            the right purpose, and in the right way — that is not within everybody's power and is not easy." -Aristotle
+            Also, always remember, "Don’t waste your time in anger, regrets, worries, and grudges. Life is too short to
+            be unhappy."</label>
+        </div>
+        <button type="button" class="btn btn-primary">Share</button>
+      </form>
+      <br><br><br><br>
+      <hr>
+    </div>
+  </section>
+
+  <section class="callout afgcolor8" id="scpage">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5">Ahhh!? What are you scared of? Are you in danger?</h2>
+      <form>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+              checked>
+            <label class="form-check-label" for="exampleRadios1">
+              Yes
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              No
+            </label>
+          </div>
+
+          <label for="scaredText"> Call for help! 911 if its an emergency. Heres a list of hotline numbers:
+            https://psychcentral.com/lib/common-hotline-phone-numbers/ </label>
+          <label for="scaredText"> Will your fear prevent you from doing things that would benefit you? Share your
+            fear</label>
+          <input type="text" class="form-control" id="scaredText" placeholder="What are you scared of?">
+
+          <label for="scaredText">Yea that can be kind of scary. But when I am scared, I remember that "Fear is the main
+            source of superstition, and one of the main sources of cruelty. To conquer fear is the beginning of wisdom."
+            — Bertrand Russell. Once you conquer these negative fears, you’ll be able to achieve much more than you
+            could’ve ever thought possible.
+          </label>
+        </div>
+        <button type="button" class="btn btn-primary">Share</button>
+      </form>
+
+
+      <section class="callout afgcolor9" id="sapage">
+        <div class="container text-center">
+          <h2 class="mx-auto mb-5">Oh. You're sad. I understand this emotion. It can be hard to talk about. Do you want
+            to
+            talk about it?</h2>
+          <form>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                  checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                  No
+                </label>
+              </div>
+              <label for="sadText">Oh, I completley understand if you don't want to share. I hope things get better back
+                there! </label>
+              <input type="text" class="form-control" id="sadText" placeholder="What makes you sad?">
+              <label for="sadText">Oh No! I'm so sorry! I hope things get better for you! Just remember that you are not
+                the
+                only one. And you are certainly not alone. Sometimes when we feel sad, we feel lonley. Here's a quote
+                that I
+                really hope helps:</label>
+              <label for="sadText">You are braver than you believe - </label>
+              <label for="sadText">Stronger than you seem - </label>
+              <label for="sadText">Smarter than you think - </label>
+              <label for="sadText">And loved more than you could ever know. ❤ - </label>
+              <label for="sadText">- A.A.Mile</label>
+            </div>
+            <button type="button" class="btn btn-primary">Share</button>
+          </form>
+          <br><br><br><br>
+          <hr>
+        </div>
+      </section>
+
+      <section class="callout afgcolor10" id="plpage">
+        <div class="container text-center">
+          <h2 class="mx-auto mb-5">Ooh, I love feeling Playful! Makes me feel like I'm still 3 years old :) </h2>
+          <form>
+            <div class="form-group">
+              <label for="happyText">You know, theres a famous quote that goes like this:"Happiness is not an ideal of
+                reason, but of imagination." – Immanuel Kant</label>
+              <label for="happyText">Stay playful and keep that smile on your face!</label>
+              </label>
+            </div>
+          </form>
+          <br><br><br><br>
+          <hr>
+        </div>
+      </section>
+
+      <section class="callout afgcolor11" id="confpage">
+        <div class="container text-center">
+          <h2 class="mx-auto mb-5">Oh yeahh!! Confident, nicee! Any good news to share?</h2>
+          <form>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                  checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                  No
+                </label>
+              </div>
+
+              <input type="text" class="form-control" id="confidentText" placeholder="Share here">
+
+              <label for="confindentText">Cool!!!! Thats great, you should be proud. </label>
+              <label for="Text">"When you have a lot of confidence and you feel like nobody can beat you, it’s game over
+                for everyone else." Keep believing in yourself! You can accomplish great things if you put your mind to
+                it.</label>
+            </div>
+            <button type="button" class="btn btn-primary">Share</button>
+          </form>
+          <br><br><br><br>
+          <hr>
+        </div>
+      </section>
+
+      <section class="callout afgcolor12" id="mepage">
+        <div class="container text-center">
+          <h2 class="mx-auto mb-5">You’re feeling meh. Cool.
+          </h2>
+          <form>
+            <div class="form-group">
+              <label for="mehText"> I know that feeling: empty, drained, indifferent to everything. Usually this is due
+                to a buildup of a lot of negative emotions. </label>
+              <label for="mehText">"Always be true to your feelings because the more you deny what you feel the stronger
+                it becomes". If reflecting doesn't work, try spending time with your family and friends. Even though you
+                feel this way, I want you to know I care, and there are people who do as well.</label>
+              <label><b>You matter</b></label>
+            </div>
+
+          </form>
+          <br><br><br><br>
+          <hr>
+        </div>
+      </section>
+
+
+
+
+
+
+      <!-- Footer -->
+      <footer class="footer text-center">
+        <div class="container">
+          <p class="text-muted small mb-0">Copyright &copy; the little things 2020</p>
+        </div>
+      </footer>
+
+      <!-- Scroll to Top Button-->
+      <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+        <i class="fas fa-angle-up fa-lg"></i>
+      </a>
+
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+      <!-- Plugin JavaScript -->
+      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+      <!-- Custom scripts for this template -->
+      <script src="js/stylish-portfolio.min.js"></script>
+
+</body>
+
+</html>
