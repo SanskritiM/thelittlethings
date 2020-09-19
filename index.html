@@ -322,6 +322,84 @@
       $("#stext1").hide();
       $("#stext2").hide();
       $("#stext3").hide();
+      $("#stext4").hide();
+      $("#antext1").hide();
+      $("#antext2").hide();
+      $("#antext3").hide();
+      $("#antext4").hide();
+      $("#antext5").hide();
+      $("#sctext1").hide();
+      $("#sctext2").hide();
+      $("#sctext3").hide();
+      $("#satext1").hide();
+      $("#satext2").hide();
+      $("#satext3").hide();
+      $("#cotext1").hide();
+      $("#cotext2").hide();
+      $("#cotext3").hide();
+
+
+      $("#st1").click(function () {
+        $("#stext1").show();
+      });
+
+      $("#stsh1").click(function () {
+        $("#stext2").show();
+      });
+
+      $("#st2").click(function () {
+        $("#stext3").show();
+      });
+
+      $("#stsh2").click(function () {
+        $("#stext4").show();
+      });
+
+      $("#an1").click(function () {
+        $("#antext1").show();
+      });
+
+      $("#an2").click(function () {
+        $("#antext2").show();
+      });
+      $("#an3").click(function () {
+        $("#antext3").show();
+      });
+      $("#an4").click(function () {
+        $("#antext4").show();
+      });
+      $("#ansh").click(function () {
+        $("#antext5").show();
+      });
+      $("#sc1").click(function () {
+        $("#sctext1").show();
+      });
+      $("#sc2").click(function () {
+        $("#sctext2").show();
+      });
+      $("#scsh").click(function () {
+        $("#sctext3").show();
+      });
+      $("#sa1").click(function () {
+        $("#satext1").show();
+      });
+      $("#sa2").click(function () {
+        $("#satext2").show();
+      });
+      $("#sash").click(function () {
+        $("#satext3").show();
+      });
+      $("#co1").click(function () {
+        $("#cotext1").show();
+      });
+      $("#co2").click(function () {
+        $("#cotext2").show();
+      });
+      $("#cosh").click(function () {
+        $("#cotext3").show();
+        $("#cotext2").show();
+      });
+
 
       $("#hash").click(function () {
         $("#haptext").show();
@@ -820,7 +898,7 @@
 
   <section class="callout cfgcolor2" id="tipage">
     <div class="container text-center">
-       <h2 class="mx-auto mb-5 cfgcolor2">Tired? <small class="emotioncolor"> So am I...*yawn* Why though?</small>
+      <h2 class="mx-auto mb-5 cfgcolor2">Tired? <small class="emotioncolor"> So am I...*yawn* Why though?</small>
       </h2>
       <form>
         <div class="form-group advise2">
@@ -846,14 +924,14 @@
           <div class="container text-center cfgcolor2" id="titext1">
             <label for="tiredText">Lol!! Taking a break and just relaxing every once and a while is great! Make sure to
               get enough sleep though, as your brain needs some rest as well!</label>
-              <blockquote class="blockquote well">
-                <p class="mb-0 quote2 cfgcolor2">
-                  "Your future depends on your dreams, so go to
-              sleep." 
-                </p>
-                <footer class="blockquote-footer quote"><cite title="Source Title">Mesut Barazany</cite></footer>
-              </blockquote>
-              <label for="tiredText">Heres a quote to help you rest easy: "Your future depends on your dreams, so go to
+            <blockquote class="blockquote well">
+              <p class="mb-0 quote2 cfgcolor2">
+                "Your future depends on your dreams, so go to
+                sleep."
+              </p>
+              <footer class="blockquote-footer quote"><cite title="Source Title">Mesut Barazany</cite></footer>
+            </blockquote>
+            <label for="tiredText">Heres a quote to help you rest easy: "Your future depends on your dreams, so go to
               sleep." – Mesut Barazany. </label>
             <br><br><br><br>
           </div>
@@ -884,46 +962,48 @@
 
   <section class="callout afgcolor6" id="stpage">
     <div class="container text-center">
-      <h2 class="mx-auto mb-5">Oh no! Stressed is not good for you. Let's talk about it.</h2>
+      <h2 class="mx-auto mb-5">Oh no! Stress is not good for you. Let's talk about it.</h2>
       <form>
         <div class="form-group">
-          <label for="stressedText">Oh no! You're feeling stressed...What wrong? Too much to do, or is something else
+          <label for="stressedText">You're feeling stressed...What’s wrong? Too much to do, or is something else?
             bothering you? </label>
-          <div class="form-check" id="st1">
+          <div class="form-check">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
               checked>
-            <label class="form-check-label" for="exampleRadios1">
+            <label class="form-check-label" for="exampleRadios1" id="st1">
               Waaaaay too much to do
             </label>
           </div>
-          <div class="form-check" id="st2">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2"
+              id="st2">
             <label class="form-check-label" for="exampleRadios2">
               No, it's something else
             </label>
           </div>
         </div>
-        <div class="container text-center" id=”stext1”>
+        <div class="container text-center" id="stext1">
           <label for="stressedText">Oh No! Too much to do? Well, I for one have definitely faced that before. Tell me
             what
-            you have to do. </label>
+            you have to do it. </label>
           <input type="text" class="form-control" id="stressedText" placeholder="What do you have to do?">
-          <br><button type="button" class="btn btn-primary" id="stsh1">Share</button><br>
+          <button type="button" class="btn btn-primary" id="stsh1">Share</button>
+        </div>
+        <div class="container text-center" id="stext2">
           <label for="stressedText">Oh god, you're right, that does sound pretty stressful... I would suggest just
             getting organized if you haven't done so already. Time management is key. Time = life; therefore, waste your
             time and waste of your life, or master your time and master your life.</label>
         </div>
-        <div class="container text-center" id=”stext2”>
+        <div class="container text-center" id="stext3">
           <label for="stressedText">Something else. Hmmm... What's That?</label>
           <input type="text" class="form-control" id="stressedText" placeholder="What's up?">
-          <button type="submit" class="btn btn-primary" id="stsh2">Share</button>
+          <button type="button" class="btn btn-primary" id="stsh2">Share</button>
         </div>
-        <div class="container text-center" id=”stext3”>
+        <div class="container text-center" id="stext4">
           <label for="stressedText">Oh no..Thats not good. I hope you feel better soon, and i hope things get better!
             Dont
             give up though, learn from this and let it make you better.</label>
         </div>
-
       </form>
       <br><br><br><br>
       <hr>
@@ -935,229 +1015,258 @@
       <h2 class="mx-auto mb-5">You’re angry. Are you angry at a person? </h2>
       <form>
         <div class="form-group">
-          <div class="form-check">
+          <div class="form-check" id="an1">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
               checked>
             <label class="form-check-label" for="exampleRadios1">
               Yes
             </label>
           </div>
-          <div class="form-check">
+          <div class="form-check" id="an2">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
             <label class="form-check-label" for="exampleRadios2">
               No
             </label>
           </div>
 
-
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-              checked>
-            <label class="form-check-label" for="exampleRadios1">
-              I'm mad at someone I love
-            </label>
+          <div class="container text-center" id="antext1">
+            <div class="form-check" id="an3">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                checked>
+              <label class="form-check-label" for="exampleRadios1">
+                I'm mad at someone I love
+              </label>
+            </div>
+            <div class="form-check" id="an4">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                I'm not mad at someone I love
+              </label>
+            </div>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-              I'm not mad at someone I love
-            </label>
+          <div class="container text-center" id="antext3">
+            <label for="angryText">"No matter how angry you get you will always end up forgiving those who you love".
+              But it is important not to let that anger ruin your relationship with that person. </label>
           </div>
-          <label for="angryText">"No matter how angry you get you will always end up forgiving those who you love". But
-            it is important not to let that anger ruin your relationship with that person. </label>
-
-          <label for="angryText">"Getting angry is actually punishing yourself for the mistakes of others." Don’t let
-            your anger at someone who doesn’t matter ruin your life. It is best to move on and not hold onto that anger.
-            If you can’t do that, then try to talk about why you are angry. </label>
+          <div class="container text-center" id="antext4">
+            <label for="angryText">"Getting angry is actually punishing yourself for the mistakes of others." Don’t let
+              your anger at someone who doesn’t matter ruin your life. It is best to move on and not hold onto that
+              anger. If you can’t do that, then try to talk about why you are angry. </label>
+          </div>
           <br><br>
-          <label for="angryText">What are you angry at?</label>
-          <input type="text" class="form-control" id="happyText" placeholder="what made you angry?">
-          <label for="angryText">
+          <div class="container text-center" id="antext2">
+            <label for="angryText">What are you angry at?</label>
+            <input type="text" class="form-control" id="happyText" placeholder="what made you angry?">
+            <label for="angryText">
+              <button type="button" class="btn btn-primary" id="ansh">Share</button>
+          </div>
+          <div class="container text-center" id="antext5">
             Agh!! So unfair! Although, some looking at things from a different perspective can be helpful. Only once
             you’re completely sure the other side is wrong, should you act upon your anger. "Anybody can become angry —
             that is easy, but to be angry with the right person and to the right degree and at the right time and for
             the right purpose, and in the right way — that is not within everybody's power and is not easy." -Aristotle
             Also, always remember, "Don’t waste your time in anger, regrets, worries, and grudges. Life is too short to
             be unhappy."</label>
+          </div>
         </div>
-        <button type="button" class="btn btn-primary">Share</button>
       </form>
       <br><br><br><br>
       <hr>
     </div>
   </section>
 
+
+
   <section class="callout afgcolor8" id="scpage">
     <div class="container text-center">
       <h2 class="mx-auto mb-5">Ahhh!? What are you scared of? Are you in danger?</h2>
       <form>
         <div class="form-group">
-          <div class="form-check">
+          <div class="form-check" id="sc1">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
               checked>
             <label class="form-check-label" for="exampleRadios1">
               Yes
             </label>
           </div>
-          <div class="form-check">
+          <div class="form-check" id="sc2">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
             <label class="form-check-label" for="exampleRadios2">
               No
             </label>
           </div>
-
-          <label for="scaredText"> Call for help! 911 if its an emergency. Heres a list of hotline numbers:
-            https://psychcentral.com/lib/common-hotline-phone-numbers/ </label>
-          <label for="scaredText"> Will your fear prevent you from doing things that would benefit you? Share your
-            fear</label>
-          <input type="text" class="form-control" id="scaredText" placeholder="What are you scared of?">
-
-          <label for="scaredText">Yea that can be kind of scary. But when I am scared, I remember that "Fear is the main
-            source of superstition, and one of the main sources of cruelty. To conquer fear is the beginning of wisdom."
-            — Bertrand Russell. Once you conquer these negative fears, you’ll be able to achieve much more than you
-            could’ve ever thought possible.
+          <div class="container text-center" id="sctext1">
+            <label for="scaredText"> Call for help! 911 if its an emergency. Heres a list of hotline numbers:
+              https://psychcentral.com/lib/common-hotline-phone-numbers/ </label>
+          </div>
+          <div class="container text-center" id="sctext2">
+            <label for="scaredText"> Will your fear prevent you from doing things that would benefit you? Share your
+              fear</label>
+            <input type="text" class="form-control" id="scaredText" placeholder="What are you scared of?">
+            <button type="button" class="btn btn-primary" id="scsh>Share</button>
+</div>
+<div class=" container text-center" id="sctext3">
+              <label for="scaredText">Yea that can be kind of scary. But when I am scared, I remember that "Fear is the
+                main source of superstition, and one of the main sources of cruelty. To conquer fear is the beginning of
+                wisdom." — Bertrand Russell. Once you conquer these negative fears, you’ll be able to achieve much more
+                than you could’ve ever thought possible.
+          </div>
           </label>
         </div>
-        <button type="button" class="btn btn-primary">Share</button>
       </form>
+      <br><br><br><br>
+      <hr>
+    </div>
+  </section>
 
-
-      <section class="callout afgcolor9" id="sapage">
-        <div class="container text-center">
-          <h2 class="mx-auto mb-5">Oh. You're sad. I understand this emotion. It can be hard to talk about. Do you want
-            to
-            talk about it?</h2>
-          <form>
-            <div class="form-group">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                  checked>
-                <label class="form-check-label" for="exampleRadios1">
-                  Yes
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
-                  No
-                </label>
-              </div>
-              <label for="sadText">Oh, I completley understand if you don't want to share. I hope things get better back
-                there! </label>
-              <input type="text" class="form-control" id="sadText" placeholder="What makes you sad?">
-              <label for="sadText">Oh No! I'm so sorry! I hope things get better for you! Just remember that you are not
-                the
-                only one. And you are certainly not alone. Sometimes when we feel sad, we feel lonley. Here's a quote
-                that I
-                really hope helps:</label>
-              <label for="sadText">You are braver than you believe - </label>
-              <label for="sadText">Stronger than you seem - </label>
-              <label for="sadText">Smarter than you think - </label>
-              <label for="sadText">And loved more than you could ever know. ❤ - </label>
-              <label for="sadText">- A.A.Mile</label>
-            </div>
-            <button type="button" class="btn btn-primary">Share</button>
-          </form>
-          <br><br><br><br>
-          <hr>
+  <section class="callout afgcolor9" id="sapage">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5">Oh. You're sad. I understand this emotion. It can be hard to talk about. Do you want to
+        talk about it?</h2>
+      <form>
+        <div class="form-group">
+          <div class="form-check" id="sa1">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+              checked>
+            <label class="form-check-label" for="exampleRadios1">
+              Yes
+            </label>
+          </div>
+          <div class="form-check" id="sa2">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              No
+            </label>
+          </div>
+          <div class="container text-center" id="satext2">
+            <label for="sadText">Oh, I completely understand if you don't want to share. I hope things get better back
+              there! </label>
+          </div>
+          <div class="container text-center" id="satext1">
+            <input type="text" class="form-control" id="sadText" placeholder="What makes you sad?">
+            <button type="submit" class="btn btn-primary" id="sash">Share</button>
+          </div>
+          <div class="container text-center" id="satext3">
+            <label for="sadText">Oh No! I'm so sorry! I hope things get better for you! Just remember that you are not
+              the
+              only one. And you are certainly not alone. Sometimes when we feel sad, we feel lonely. Here's a quote that
+              I
+              really hope helps:</label>
+            <label for="sadText">You are braver than you believe - </label>
+            <label for="sadText">Stronger than you seem - </label>
+            <label for="sadText">Smarter than you think - </label>
+            <label for="sadText">And loved more than you could ever know. ❤ - </label>
+            <label for="sadText">- A.Mile</label>
+          </div>
         </div>
-      </section>
+      </form>
+      <br><br><br><br>
+      <hr>
+    </div>
+  </section>
 
-      <section class="callout afgcolor10" id="plpage">
-        <div class="container text-center">
-          <h2 class="mx-auto mb-5">Ooh, I love feeling Playful! Makes me feel like I'm still 3 years old :) </h2>
-          <form>
-            <div class="form-group">
-              <label for="happyText">You know, theres a famous quote that goes like this:"Happiness is not an ideal of
-                reason, but of imagination." – Immanuel Kant</label>
-              <label for="happyText">Stay playful and keep that smile on your face!</label>
-              </label>
-            </div>
-          </form>
-          <br><br><br><br>
-          <hr>
+
+  <section class="callout afgcolor10" id="plpage">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5">Ooh, I love feeling Playful! Makes me feel like I'm still 3 years old :) </h2>
+      <form>
+        <div class="form-group">
+          <label for="happyText">You know, theres a famous quote that goes like this:"Happiness is not an ideal of
+            reason, but of imagination." – Immanuel Kant</label>
+          <label for="happyText">Stay playful and keep that smile on your face!</label>
+          </label>
         </div>
-      </section>
+      </form>
+      <br><br><br><br>
+      <hr>
+    </div>
+  </section>
 
-      <section class="callout afgcolor11" id="confpage">
-        <div class="container text-center">
-          <h2 class="mx-auto mb-5">Oh yeahh!! Confident, nicee! Any good news to share?</h2>
-          <form>
-            <div class="form-group">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                  checked>
-                <label class="form-check-label" for="exampleRadios1">
-                  Yes
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
-                  No
-                </label>
-              </div>
+  <section class="callout afgcolor11" id="confpage">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5">Oh yeahh!! Confident, nicee! Any good news to share?</h2>
+      <form>
+        <div class="form-group">
+          <div class="form-check" id="co1">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+              checked>
+            <label class="form-check-label" for="exampleRadios1">
+              Yes
+            </label>
+          </div>
+          <div class="form-check" id="co2">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              No
+            </label>
+          </div>
+          <div class="container text-center" id="cotext1">
+            <input type="text" class="form-control" id="confidentText" placeholder="Share here">
+            <button type="submit" class="btn btn-primary" id="cosh">Share</button>
+          </div>
+          <div class="container text-center" id="cotext3">
+            <label for="confidentText">Cool!!!! Thats great, you should be proud. </label>
+          </div>
 
-              <input type="text" class="form-control" id="confidentText" placeholder="Share here">
-
-              <label for="confindentText">Cool!!!! Thats great, you should be proud. </label>
-              <label for="Text">"When you have a lot of confidence and you feel like nobody can beat you, it’s game over
-                for everyone else." Keep believing in yourself! You can accomplish great things if you put your mind to
-                it.</label>
-            </div>
-            <button type="button" class="btn btn-primary">Share</button>
-          </form>
-          <br><br><br><br>
-          <hr>
+          <div class="container text-center" id="cotext2">
+            <label for="Text">"When you have a lot of confidence and you feel like nobody can beat you, it’s game over
+              for everyone else." Keep believing in yourself! You can accomplish great things if you put your mind to
+              it.</label>
+          </div>
         </div>
-      </section>
+      </form>
+      <br><br><br><br>
+      <hr>
+    </div>
+  </section>
 
-      <section class="callout afgcolor12" id="mepage">
-        <div class="container text-center">
-          <h2 class="mx-auto mb-5">You’re feeling meh. Cool.
-          </h2>
-          <form>
-            <div class="form-group">
-              <label for="mehText"> I know that feeling: empty, drained, indifferent to everything. Usually this is due
-                to a buildup of a lot of negative emotions. </label>
-              <label for="mehText">"Always be true to your feelings because the more you deny what you feel the stronger
-                it becomes". If reflecting doesn't work, try spending time with your family and friends. Even though you
-                feel this way, I want you to know I care, and there are people who do as well.</label>
-              <label><b>You matter</b></label>
-            </div>
 
-          </form>
-          <br><br><br><br>
-          <hr>
+  <section class="callout afgcolor12" id="mepage">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5">You’re feeling meh. Cool.
+      </h2>
+      <form>
+        <div class="form-group">
+          <label for="mehText"> I know that feeling: empty, drained, indifferent to everything. Usually this is due
+            to a buildup of a lot of negative emotions. </label>
+          <label for="mehText">"Always be true to your feelings because the more you deny what you feel the stronger
+            it becomes". If reflecting doesn't work, try spending time with your family and friends. Even though you
+            feel this way, I want you to know I care, and there are people who do as well.</label>
+          <label><b>You matter</b></label>
         </div>
-      </section>
+
+      </form>
+      <br><br><br><br>
+      <hr>
+    </div>
+  </section>
 
 
 
 
 
 
-      <!-- Footer -->
-      <footer class="footer text-center">
-        <div class="container">
-          <p class="text-muted small mb-0">Copyright &copy; the little things 2020</p>
-        </div>
-      </footer>
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <p class="text-muted small mb-0">Copyright &copy; the little things 2020</p>
+    </div>
+  </footer>
 
-      <!-- Scroll to Top Button-->
-      <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-        <i class="fas fa-angle-up fa-lg"></i>
-      </a>
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up fa-lg"></i>
+  </a>
 
-      <!-- Bootstrap core JavaScript -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-      <!-- Plugin JavaScript -->
-      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-      <!-- Custom scripts for this template -->
-      <script src="js/stylish-portfolio.min.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
 
 </body>
 
